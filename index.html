@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title> SBA 308A:Weather API </title>
+</head>
+
+<body>
+  <!-- TESTING AREA 
+  <p id="test0"></p>
+  <p id="test1"></p>
+  -->
+  <div id="app">
+    <!-- Header Section -->
+    <header id="header">
+      <!-- Image -->
+      <div id="imageBox">
+        <img id="sunsetPic" src="images/2Sunset.png" alt="sunset graphic">
+      </div>
+      <!-- Titles -->
+      <h1 id="appTitle"> WEATHER <span>OR</span> WEATHER <span> NOT</span> </h1>
+      <h2 id="subtitle">Oh the Places, You Will Go!</h2>
+    </header>
+
+    <!-- Search Section -->
+    <section id="searchBox">
+      <!-- Search Bar -->
+      <div id="searchBar">
+        <input type="text" id="searchBarInput" placeholder=" Search By City">
+        <!-- Search  Button-->
+        <button id="btnSearch" onclick="getWeather()">
+          <i id="searchBarIcon" class="fa fa-search" aria-hidden="true">
+          </i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Section -->
+    <main id="main">
+      <!--Date & City -->
+      <div id="info">
+        <p id="date"></p>
+        <h3 id="city"></h3>
+      </div>
+      <!-- Temp Image -->
+      <div id="tempImageBox">
+        <div id="tempImage"></div>
+      </div>
+      <!-- Description -->
+      <div id="descript"></div>
+      <!-- Temp -->
+      <div id="temp"></div>
+    </main>
+
+    <!-- Footer Section-->
+    <!-- Exta Info -->
+    <footer id="footer">
+      <div id="extraInfo">
+        <div class="col">
+          <div class="info">
+            <h5 id="high">High</h5>
+            <p id="tempMax"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5 id="low">Low</h5>
+            <p id="tempMin"></p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <script defer src="script.js">
+  </script>
+</body>
+
+</html>
